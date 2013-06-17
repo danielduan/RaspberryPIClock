@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://x.dtott.com/clock/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="canvas canvastext geolocation rgba hsla multiplebgs borderimage borderradius boxshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions  video audio localstorage sessionstorage webworkers applicationcache fontface"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>CSS Clock</title>
+        <link type="text/css" rel="stylesheet" media="all" href="./CSS Clock_files/clock.css">
+        <script type="text/javascript" src="./CSS Clock_files/jquery.min.js"></script>
+        <script type="text/javascript" src="./CSS Clock_files/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./CSS Clock_files/clock.js"></script>
+        
+        <script type="text/javascript" src="./CSS Clock_files/modernizr.js"></script><style>@font-face{font-family:testfont;src:url('data:font/ttf;base64,AAEAAAAMAIAAAwBAT1MvMliohmwAAADMAAAAVmNtYXCp5qrBAAABJAAAANhjdnQgACICiAAAAfwAAAAEZ2FzcP//AAMAAAIAAAAACGdseWYv5OZoAAACCAAAANxoZWFk69bnvwAAAuQAAAA2aGhlYQUJAt8AAAMcAAAAJGhtdHgGDgC4AAADQAAAABRsb2NhAIQAwgAAA1QAAAAMbWF4cABVANgAAANgAAAAIG5hbWUgXduAAAADgAAABPVwb3N03NkzmgAACHgAAAA4AAECBAEsAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAACAAMDAAAAAAAAgAACbwAAAAoAAAAAAAAAAFBmRWQAAAAgqS8DM/8zAFwDMwDNAAAABQAAAAAAAAAAAAMAAAADAAAAHAABAAAAAABGAAMAAQAAAK4ABAAqAAAABgAEAAEAAgAuqQD//wAAAC6pAP///9ZXAwAAAAAAAAACAAAABgBoAAAAAAAvAAEAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEACoAAAAGAAQAAQACAC6pAP//AAAALqkA////1lcDAAAAAAAAAAIAAAAiAogAAAAB//8AAgACACIAAAEyAqoAAwAHAC6xAQAvPLIHBADtMrEGBdw8sgMCAO0yALEDAC88sgUEAO0ysgcGAfw8sgECAO0yMxEhESczESMiARDuzMwCqv1WIgJmAAACAFUAAAIRAc0ADwAfAAATFRQWOwEyNj0BNCYrASIGARQGKwEiJj0BNDY7ATIWFX8aIvAiGhoi8CIaAZIoN/43KCg3/jcoAWD0JB4eJPQkHh7++EY2NkbVRjY2RgAAAAABAEH/+QCdAEEACQAANjQ2MzIWFAYjIkEeEA8fHw8QDxwWFhwWAAAAAQAAAAIAAIuYbWpfDzz1AAsEAAAAAADFn9IuAAAAAMWf0i797/8zA4gDMwAAAAgAAgAAAAAAAAABAAADM/8zAFwDx/3v/98DiAABAAAAAAAAAAAAAAAAAAAABQF2ACIAAAAAAVUAAAJmAFUA3QBBAAAAKgAqACoAWgBuAAEAAAAFAFAABwBUAAQAAgAAAAEAAQAAAEAALgADAAMAAAAQAMYAAQAAAAAAAACLAAAAAQAAAAAAAQAhAIsAAQAAAAAAAgAFAKwAAQAAAAAAAwBDALEAAQAAAAAABAAnAPQAAQAAAAAABQAKARsAAQAAAAAABgAmASUAAQAAAAAADgAaAUsAAwABBAkAAAEWAWUAAwABBAkAAQBCAnsAAwABBAkAAgAKAr0AAwABBAkAAwCGAscAAwABBAkABABOA00AAwABBAkABQAUA5sAAwABBAkABgBMA68AAwABBAkADgA0A/tDb3B5cmlnaHQgMjAwOSBieSBEYW5pZWwgSm9obnNvbi4gIFJlbGVhc2VkIHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgT3BlbiBGb250IExpY2Vuc2UuIEtheWFoIExpIGdseXBocyBhcmUgcmVsZWFzZWQgdW5kZXIgdGhlIEdQTCB2ZXJzaW9uIDMuYmFlYzJhOTJiZmZlNTAzMiAtIHN1YnNldCBvZiBKdXJhTGlnaHRiYWVjMmE5MmJmZmU1MDMyIC0gc3Vic2V0IG9mIEZvbnRGb3JnZSAyLjAgOiBKdXJhIExpZ2h0IDogMjMtMS0yMDA5YmFlYzJhOTJiZmZlNTAzMiAtIHN1YnNldCBvZiBKdXJhIExpZ2h0VmVyc2lvbiAyIGJhZWMyYTkyYmZmZTUwMzIgLSBzdWJzZXQgb2YgSnVyYUxpZ2h0aHR0cDovL3NjcmlwdHMuc2lsLm9yZy9PRkwAQwBvAHAAeQByAGkAZwBoAHQAIAAyADAAMAA5ACAAYgB5ACAARABhAG4AaQBlAGwAIABKAG8AaABuAHMAbwBuAC4AIAAgAFIAZQBsAGUAYQBzAGUAZAAgAHUAbgBkAGUAcgAgAHQAaABlACAAdABlAHIAbQBzACAAbwBmACAAdABoAGUAIABPAHAAZQBuACAARgBvAG4AdAAgAEwAaQBjAGUAbgBzAGUALgAgAEsAYQB5AGEAaAAgAEwAaQAgAGcAbAB5AHAAaABzACAAYQByAGUAIAByAGUAbABlAGEAcwBlAGQAIAB1AG4AZABlAHIAIAB0AGgAZQAgAEcAUABMACAAdgBlAHIAcwBpAG8AbgAgADMALgBiAGEAZQBjADIAYQA5ADIAYgBmAGYAZQA1ADAAMwAyACAALQAgAHMAdQBiAHMAZQB0ACAAbwBmACAASgB1AHIAYQBMAGkAZwBoAHQAYgBhAGUAYwAyAGEAOQAyAGIAZgBmAGUANQAwADMAMgAgAC0AIABzAHUAYgBzAGUAdAAgAG8AZgAgAEYAbwBuAHQARgBvAHIAZwBlACAAMgAuADAAIAA6ACAASgB1AHIAYQAgAEwAaQBnAGgAdAAgADoAIAAyADMALQAxAC0AMgAwADAAOQBiAGEAZQBjADIAYQA5ADIAYgBmAGYAZQA1ADAAMwAyACAALQAgAHMAdQBiAHMAZQB0ACAAbwBmACAASgB1AHIAYQAgAEwAaQBnAGgAdABWAGUAcgBzAGkAbwBuACAAMgAgAGIAYQBlAGMAMgBhADkAMgBiAGYAZgBlADUAMAAzADIAIAAtACAAcwB1AGIAcwBlAHQAIABvAGYAIABKAHUAcgBhAEwAaQBnAGgAdABoAHQAdABwADoALwAvAHMAYwByAGkAcAB0AHMALgBzAGkAbAAuAG8AcgBnAC8ATwBGAEwAAAAAAgAAAAAAAP+BADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAQACAQIAEQt6ZXJva2F5YWhsaQ==')}</style>
+    </head>
+    <body class="pm">
+
+    <div id="w">
+        <ol id="hours">
+            <li><span>One</span></li>
+            <li><span>Two</span></li>
+            <li><span>Three</span></li>
+            <li><span>Four</span></li>
+            <li><span>Five</span></li>
+            <li><span>Six</span></li>
+            <li><span>Seven</span></li>
+            <li><span>Eight</span></li>
+            <li><span>Nine</span></li>
+            <li><span>Ten</span></li>
+            <li class="active"><span>Eleven</span></li>
+            <li><span>Twelve</span></li>
+        </ol>
+        <ol id="minutes">
+            <li><span>Oh-One <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Oh-Two <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Oh-Three <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Oh-Four <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li class=""><span>Oh-Five <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li class=""><span>Oh-Six <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li class=""><span>Oh-Seven <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li class=""><span>Oh-Eight <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li class="active"><span>Oh-Nine <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Ten <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Eleven <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twelve <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirteen <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fourteen <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifteen <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Sixteen <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Seventeen <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Eighteen <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Nineteen <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-One <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Two <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Three <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Four <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Five <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Six <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Seven <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Eight <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Twenty-Nine <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-One <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Two <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Three <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Four <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Five <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Six <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Seven <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Eight <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Thirty-Nine <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-One <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Two <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Three <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Four <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Five <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Six <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Seven <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Eight <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Forty-Nine <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-One <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Two <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Three <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Four <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Five <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Six <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Seven <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Eight <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>Fifty-Nine <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+            <li><span>O'Clock <span class="am">AM</span><span class="pm">PM</span> <span>and</span></span></li>
+        </ol>
+        <ol id="seconds">
+            <li class=""><span>One <span>second</span></span></li>
+            <li class=""><span>Two <span>seconds</span></span></li>
+            <li class=""><span>Three <span>seconds</span></span></li>
+            <li class=""><span>Four <span>seconds</span></span></li>
+            <li class=""><span>Five <span>seconds</span></span></li>
+            <li class=""><span>Six <span>seconds</span></span></li>
+            <li class=""><span>Seven <span>seconds</span></span></li>
+            <li class=""><span>Eight <span>seconds</span></span></li>
+            <li class=""><span>Nine <span>seconds</span></span></li>
+            <li class=""><span>Ten <span>seconds</span></span></li>
+            <li class=""><span>Eleven <span>seconds</span></span></li>
+            <li class=""><span>Twelve <span>seconds</span></span></li>
+            <li class=""><span>Thirteen <span>seconds</span></span></li>
+            <li class=""><span>Fourteen <span>seconds</span></span></li>
+            <li class=""><span>Fifteen <span>seconds</span></span></li>
+            <li class=""><span>Sixteen <span>seconds</span></span></li>
+            <li class=""><span>Seventeen <span>seconds</span></span></li>
+            <li class=""><span>Eighteen <span>seconds</span></span></li>
+            <li class=""><span>Nineteen <span>seconds</span></span></li>
+            <li class=""><span>Twenty <span>seconds</span></span></li>
+            <li class=""><span>Twenty-One <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Two <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Three <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Four <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Five <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Six <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Seven <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Eight <span>seconds</span></span></li>
+            <li class=""><span>Twenty-Nine <span>seconds</span></span></li>
+            <li class=""><span>Thirty <span>seconds</span></span></li>
+            <li class=""><span>Thirty-One <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Two <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Three <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Four <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Five <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Six <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Seven <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Eight <span>seconds</span></span></li>
+            <li class=""><span>Thirty-Nine <span>seconds</span></span></li>
+            <li class=""><span>Forty <span>seconds</span></span></li>
+            <li class=""><span>Forty-One <span>seconds</span></span></li>
+            <li class=""><span>Forty-Two <span>seconds</span></span></li>
+            <li class=""><span>Forty-Three <span>seconds</span></span></li>
+            <li class=""><span>Forty-Four <span>seconds</span></span></li>
+            <li class=""><span>Forty-Five <span>seconds</span></span></li>
+            <li class=""><span>Forty-Six <span>seconds</span></span></li>
+            <li class=""><span>Forty-Seven <span>seconds</span></span></li>
+            <li class=""><span>Forty-Eight <span>seconds</span></span></li>
+            <li class=""><span>Forty-Nine <span>seconds</span></span></li>
+            <li class=""><span>Fifty <span>seconds</span></span></li>
+            <li class=""><span>Fifty-One <span>seconds</span></span></li>
+            <li class=""><span>Fifty-Two <span>seconds</span></span></li>
+            <li class=""><span>Fifty-Three <span>seconds</span></span></li>
+            <li class=""><span>Fifty-Four <span>seconds</span></span></li>
+            <li class=""><span>Fifty-Five <span>seconds</span></span></li>
+            <li class=""><span>Fifty-Six <span>seconds</span></span></li>
+            <li class="active"><span>Fifty-Seven <span>seconds</span></span></li>
+            <li class=""><span>Fifty-Eight <span>seconds</span></span></li>
+            <li class=""><span>Fifty-Nine <span>seconds</span></span></li>
+            <li class=""><span>Zero <span>seconds</span></span></li>
+        </ol>
+    </div>    
+    
+    
+
+</body></html>
