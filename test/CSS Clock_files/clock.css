@@ -41,8 +41,8 @@ body {
 background:#000;
 color:#fff;
 font-family:Tahoma, Helvetica, sans-serif;
-font-size:20px;
-height:20px;
+font-size:30px;
+/*height:20px;*/
 overflow:hidden;
 }
 
@@ -50,7 +50,7 @@ overflow:hidden;
 width:1000px;
 height:1000px;
 position:relative;
-margin:50px auto;
+margin: auto;
 }
 
 #hoursW,#minutesW,#secondsW {
@@ -75,7 +75,7 @@ top:491px;
 }
 
 li {
-width:165px;
+width:200px;
 text-transform:lowercase;
 -webkit-transform-origin:0 center;
 -moz-transform-origin:0 center;
@@ -92,15 +92,15 @@ top:0;
 
 li.active {
 color:#58aef0;
-font-size:20px;
+font-size:30px;
 }
 
 #hours > li {
-padding:0 0 0 88px;
+padding:0 0 0 35px;
 }
 
 #minutes > li {
-padding:0 0 0 143px;
+padding:0 0 0 150px;
 }
 
 #seconds > li {
