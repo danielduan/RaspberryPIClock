@@ -92,10 +92,10 @@ top:0;
 
 li.active {
 color:#58aef0;
-font-size:30px;
 }
 
 #hours > li {
+font-size: 35px;
 padding:0 0 0 80px;
 }
 
