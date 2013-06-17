@@ -97,7 +97,7 @@ color:#18CAE6;
 }
 
 #hours > li {
-font-size: 45px;
+font-size: 40px;
 padding:0 0 0 70px;
 }
 
@@ -107,7 +107,7 @@ z-index: -5;
 }
 
 #seconds > li {
-padding:0 0 0 465px;
+padding:0 0 0 475px;
 z-index: -10;
 }
 
