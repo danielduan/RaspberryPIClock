@@ -108,7 +108,7 @@ padding:0 0 0 430px;
 }
 
 li span,li.active span {
-display:block;
+display:none;
 }
 
 li span span,li.active span .am,li.active span .pm {
