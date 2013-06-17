@@ -91,7 +91,9 @@ top:0;
 }
 
 li.active {
-color:#58aef0;
+/*color:#58aef0;
+*/
+color:#18CAE6;
 }
 
 #hours > li {
@@ -101,10 +103,12 @@ padding:0 0 0 80px;
 
 #minutes > li {
 padding:0 0 0 230px;
+z-index: -5;
 }
 
 #seconds > li {
 padding:0 0 0 450px;
+z-index: -10;
 }
 
 li span,li.active span {
