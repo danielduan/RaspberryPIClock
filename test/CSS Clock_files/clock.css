@@ -71,7 +71,7 @@ transform-origin:center center;
 #hours,#minutes,#seconds {
 position:absolute;
 left:500px;
-top:491px;
+top:500px;
 }
 
 li {
@@ -107,7 +107,7 @@ z-index: -5;
 }
 
 #seconds > li {
-padding:0 0 0 450px;
+padding:0 0 0 465px;
 z-index: -10;
 }
 
