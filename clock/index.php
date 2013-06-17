@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-		<link rel="text/css" href="css/styles.css">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<div id="clock">
@@ -11,7 +12,7 @@
         	<span id="twenty">TWENTY</span><span id="twentyfive">FIVE</span>X</br>
         	<span id="half">HALF</span>B<span id="tento">TEN</span>F<span id="to">TO</span></br>
     	</div>
-    
+
 		<script src="js/wordclock.js"></script>
     </body>
 </html>
