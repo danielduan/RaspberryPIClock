@@ -75,7 +75,7 @@ top:491px;
 }
 
 li {
-width:300px;
+width:350px;
 text-transform:lowercase;
 -webkit-transform-origin:0 center;
 -moz-transform-origin:0 center;
@@ -84,7 +84,7 @@ text-transform:lowercase;
 -ms-transform-origin:0 center;
 -icab-transform-origin:0 center;
 transform-origin:0 center;
-color:#222222;
+color:rgba(255,255,255,0.1);
 position:absolute;
 left:0;
 top:0;
