@@ -43,6 +43,7 @@ color:#fff;
 font-family:Tahoma, Helvetica, sans-serif;
 font-size:20px;
 height:20px;
+overflow:hidden;
 }
 
 #w {
@@ -74,7 +75,7 @@ top:491px;
 }
 
 li {
-width:150px;
+width:165px;
 text-transform:lowercase;
 -webkit-transform-origin:0 center;
 -moz-transform-origin:0 center;
@@ -91,19 +92,19 @@ top:0;
 
 li.active {
 color:#58aef0;
-font-size:14px;
+font-size:20px;
 }
 
 #hours > li {
-padding:0 0 0 80px;
+padding:0 0 0 88px;
 }
 
 #minutes > li {
-padding:0 0 0 130px;
+padding:0 0 0 143px;
 }
 
 #seconds > li {
-padding:0 0 0 270px;
+padding:0 0 0 297px;
 }
 
 li span,li.active span {
