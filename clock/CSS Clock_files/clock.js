@@ -7,10 +7,10 @@ Author: 	Daniel Ott
 Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 License
     http://creativecommons.org/licenses/by/3.0/
     This means you are free
-        to Share — to copy, distribute and transmit the work
-        to Remix — to adapt the work
+        to Share â€” to copy, distribute and transmit the work
+        to Remix â€” to adapt the work
     Under the following conditions:
-        Attribution — You must attribute the work back to me (Daniel Ott) with a link to my site (http://dtott.com)
+        Attribution â€” You must attribute the work back to me (Daniel Ott) with a link to my site (http://dtott.com)
         
         
 
@@ -59,6 +59,74 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             $("body").removeClass("am").removeClass("pm").addClass(ampm);
             //
             //end circle clock
+
+            //start qlocktwo
+            //
+            hour = currentTime.getHours();
+            minute = currentTime.getMinutes();
+
+            
+            if (minute => 35ï¼‰{
+                hour+=1;
+                $(".TO").addClass("qactive"); 
+                if(minute >=35 && minute <40){
+                     $(".TWENTY").addClass("qactive"); 
+                     $(".FIVE").addClass("qactive");
+                } else if(minute >=40 && minute <45){
+                    $(".TWENTY").addClass("qactive");
+                } else if(minute >=45 && minute <50){
+                    $(".QUARTER").addClass("qactive");
+                } else if(minute >=50 && minute <55){
+                    $(".MTEN").addClass("qactive");
+                } else if(minute >=55 && minute <=59){
+                    $(".MFIVE").addClass("qactive");
+                }
+            } else{
+                $(".PAST").addClass("qactive");
+                if(minute >=5 && minute <10){
+                    $(".FIVE").addClass("qactive");
+                } else if(minute >=10 && minute <15){
+                    $(".MTEN").addClass("qactive");
+                } else if(minute >=15 && minute <20){
+                    $(".QUARTER").addClass("qactive");
+                } else if(minute >=20 && minute <25){
+                    $(".TWENTY").addClass("qactive");
+                } else if(minute >=25 && minute <30){
+                    $(".TWENTY").addClass("qactive");
+                    $(".FIVE").addClass("qactive");
+                } else if(minute >=30 && minute <35){
+                    $(".HALF").addClass("qactive");
+                }
+                    
+            }
+            
+            
+            
+            if (hour == 1) {
+                $(".ONE").addClass("qactive");
+            } else if (hour == 2) {
+                $(".TWO").addClass("qactive");
+            } else if (hour == 3) {
+                $(".THREE").addClass("qactive");
+            } else if (hour == 4) {
+                $(".FOUR").addClass("qactive");
+            } else if (hour == 5) {
+                $(".FIVE").addClass("qactive");
+            } else if (hour == 6) {
+                $(".SIX").addClass("qactive");
+            } else if (hour == 7) {
+                $(".SEVEN").addClass("qactive");
+            } else if (hour == 8) {
+                $(".EIGHT").addClass("qactive");
+            } else if (hour == 9) {
+                $(".NINE").addClass("qactive");
+            } else if (hour == 10) {
+                $(".TEN").addClass("qactive");
+            } else if (hour == 11) {
+                $(".ELEVEN").addClass("qactive");
+            } else {
+                $(".TWELVE").addClass("qactive");
+            } 
         
         };
         //set the interval to run each second

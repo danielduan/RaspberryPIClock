@@ -26,6 +26,10 @@ padding:0;
 	height:100px;
 }
 
+.qactive {
+	color: #ffffff;	
+}
+
 ol,ul {
 list-style:none;
 }
