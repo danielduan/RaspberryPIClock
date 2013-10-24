@@ -1,18 +1,20 @@
 (function($){
 
     $(function(){
-        var hours = $("#hours"), minutes = $("#minutes"), seconds = $("#seconds");
+        //var hours = $("#hours"), minutes = $("#minutes"), seconds = $("#seconds");
         
         //these are default grabs so that the first time it runs, it doesn't throw an error
         //after that, we use them to cache the current active arm for each group, so that we
         //don't have to waste time searching
-        var cHour = $("html"), cMinute = $("html"), cSecond = $("html");
+        //var cHour = $("html"), cMinute = $("html"), cSecond = $("html");
         
         var secondToggle = false;
 
         var setCurrentTime = function(){
             //establish what the time is
             var currentTime = new Date();
+
+            /*
             var hour = currentTime.getHours() - 1;
             if(hour == -1){ hour = 11; }
             var minute = currentTime.getMinutes() - 1;
@@ -28,7 +30,7 @@
                 ampm = "pm";
             }
             
-            /*
+            
             //circle clock
             //
             //remove the active class, and add it to the new time
@@ -59,13 +61,14 @@
 
             $(".IT").addClass("qactive");
             $(".IS").addClass("qactive");
-            hour = currentTime.getHours();
-            minute = currentTime.getMinutes();
+
+            var hour = currentTime.getHours();
+            var minute = currentTime.getMinutes();
 
             if (minute<35) {
                 $(".PAST").addClass("qactive");
                 $(".TO").removeClass("qactive");
-                if(minute==0){
+                if(minute>=0 && minute<5){
                     $(".MFIVE").addClass("qactive");
                     $("OCLOCK").addClass("qactive");
                 }
@@ -112,6 +115,12 @@
                 }
             }
             
+            //support 24 hour linux time reporting
+            if (hour > 12) {
+            	hour -= 12;
+            } else if (hour == 0) {
+            	hour = 12;
+            }
             
             if (hour == 1) {
                 $(".ONE").addClass("qactive");
