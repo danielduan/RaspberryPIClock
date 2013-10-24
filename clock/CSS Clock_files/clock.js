@@ -69,6 +69,7 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
 
             if (minute<35) {
                 $(".PAST").addClass("qactive");
+                $(".TO").removeClass("qactive");
                 if(minute==0){
                     $(".MFIVE").addClass("qactive");
                     $("OCLOCK").addClass("qactive");
@@ -89,13 +90,14 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
                     $(".MFIVE").addClass("qactive");
                 } else if(minute >=30 && minute <35){
                     $(".TWENTY").removeClass("qactive");
-                    $(".FIVE").removeClass("qactive");
+                    $(".MFIVE").removeClass("qactive");
                     $(".HALF").addClass("qactive");
                 }
             }
             else {
                 hour+=1;
                 $(".TO").addClass("qactive"); 
+                $(".PAST").removeClass("qactive");
                 if(minute >=35 && minute <40){
                      $(".HALF").removeClass("qactive");
                      $(".TWENTY").addClass("qactive"); 
