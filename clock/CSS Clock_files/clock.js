@@ -67,7 +67,7 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             hour = currentTime.getHours();
             minute = currentTime.getMinutes();
 
-            $("#qlocktwo").removeClass("qactive");
+            $(".qactive").removeClass("qactive");
 
             if (minute<35) {
                 $(".PAST").addClass("qactive");
