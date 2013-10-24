@@ -67,8 +67,6 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             hour = currentTime.getHours();
             minute = currentTime.getMinutes();
 
-            $(".qactive").removeClass("qactive");
-
             if (minute<35) {
                 $(".PAST").addClass("qactive");
                 if(minute >=5 && minute <10){
@@ -106,28 +104,40 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             
             if (hour == 1) {
                 $(".ONE").addClass("qactive");
+                $(".TWELVE").removeClass("qactive");
             } else if (hour == 2) {
                 $(".TWO").addClass("qactive");
+                $(".ONE").removeClass("qactive");
             } else if (hour == 3) {
                 $(".THREE").addClass("qactive");
+                $(".TWO").removeClass("qactive");
             } else if (hour == 4) {
                 $(".FOUR").addClass("qactive");
+                $(".THREE").removeClass("qactive");
             } else if (hour == 5) {
                 $(".FIVE").addClass("qactive");
+                $(".FOUR").removeClass("qactive");
             } else if (hour == 6) {
                 $(".SIX").addClass("qactive");
+                $(".FIVE").removeClass("qactive");
             } else if (hour == 7) {
                 $(".SEVEN").addClass("qactive");
+                $(".SIX").removeClass("qactive");
             } else if (hour == 8) {
                 $(".EIGHT").addClass("qactive");
+                $(".SEVEN").removeClass("qactive");
             } else if (hour == 9) {
                 $(".NINE").addClass("qactive");
+                $(".EIGHT").removeClass("qactive");
             } else if (hour == 10) {
                 $(".TEN").addClass("qactive");
+                $(".NINE").removeClass("qactive");
             } else if (hour == 11) {
                 $(".ELEVEN").addClass("qactive");
+                $(".TEN").removeClass("qactive");
             } else {
                 $(".TWELVE").addClass("qactive");
+                $(".ELEVEN").removeClass("qactive");
             }
             //
             //end qlocktwo clock
