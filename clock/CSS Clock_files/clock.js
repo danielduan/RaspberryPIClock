@@ -44,6 +44,8 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
                 ampm = "pm";
             }
             
+            //circle clock
+            //
             //remove the active class, and add it to the new time
             cHour.removeClass("active");
             cHour = hours.children(":eq(" + hour + ")").addClass("active");
@@ -55,43 +57,13 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             cSecond = seconds.children(":eq(" + second + ")").addClass("active");
             
             $("body").removeClass("am").removeClass("pm").addClass(ampm);
+            //
+            //end circle clock
         
         };
         //set the interval to run each second
         setInterval(setCurrentTime,1000);
     
     });
-
-    $(function(){
-        var temp = 0, description = "unknown", location = "unknown", image;
-        image = document.getElementById('weatherIcon');
-        var weatherURL = "http://api.worldweatheronline.com/free/v1/weather.ashx?q=91006&format=json&num_of_days=0&includelocation=yes&key=73czs5we6dmnqrc3vq942yn9";
-        
-        var setWeather = function(){
-            //get weather information
-        $.ajax({
-            type: 'GET',
-            url: msdnAPI,
-            data: {
-                key: "ApDsB3Y0HgxN1AJaupkRmQ0o8m-QNQWUrwDxX4hE9NjKM3JO1dd_-MgRDftB5ZmX"
-            },
-            jsonp: "jsonp",
-            dataType: 'jsonp', // Pay attention to the dataType/contentType
-            success: function (data) {
-                temp = data.current_condition.temp_F;
-                description = data.current_condition.weatherDesc[0].value;
-                location = data.nearest_area.areaName[0].value;
-                image.src = data.current_condition.weatherIconUrl[0].value;
-
-                console.log("temp: "+temp + " description: " + description + " location: " + location);
-            }
-        });
-        
-        };
-        //set the interval to run each second
-        setInterval(setCurrentTime,3600);
-    
-    });
-
 
 })(jQuery);
