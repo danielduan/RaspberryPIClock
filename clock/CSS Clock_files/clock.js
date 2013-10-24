@@ -1,21 +1,3 @@
-/* 
-Title:		CSS/JS Clock
-Author: 	Daniel Ott 
-            http://dtott.com
-            http://twitter.com/danieltott
-            
-Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 License
-    http://creativecommons.org/licenses/by/3.0/
-    This means you are free
-        to Share — to copy, distribute and transmit the work
-        to Remix — to adapt the work
-    Under the following conditions:
-        Attribution — You must attribute the work back to me (Daniel Ott) with a link to my site (http://dtott.com)
-        
-        
-
-*/
-
 (function($){
 
     $(function(){
@@ -26,6 +8,8 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
         //don't have to waste time searching
         var cHour = $("html"), cMinute = $("html"), cSecond = $("html");
         
+        var secondToggle = false;
+
         var setCurrentTime = function(){
             //establish what the time is
             var currentTime = new Date();
@@ -44,6 +28,7 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
                 ampm = "pm";
             }
             
+            /*
             //circle clock
             //
             //remove the active class, and add it to the new time
@@ -59,9 +44,19 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             $("body").removeClass("am").removeClass("pm").addClass(ampm);
             //
             //end circle clock
+            */
 
             //start qlocktwo
             //
+
+            if (secondToggle) {
+                $("#qdot").addClass("qactive");
+                secondToggle = false;
+            } else {
+                $("#qdot").removeClass("qactive");
+                secondToggle = true;
+            }
+
             $(".IT").addClass("qactive");
             $(".IS").addClass("qactive");
             hour = currentTime.getHours();

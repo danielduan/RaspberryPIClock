@@ -17,6 +17,15 @@ padding:0;
 	color: #222222;
 }
 
+#qtick {
+	position:absolute;
+	margin-top:-50px;
+	margin-left:25px;
+	font-size: 75px;
+	font-family: 'Open Sans';
+	color: #222222;
+}
+
 #qclock td {
 	width:100px;
 	text-align: center;
