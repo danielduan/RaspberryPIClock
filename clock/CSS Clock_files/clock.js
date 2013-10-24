@@ -65,7 +65,8 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             hour = currentTime.getHours();
             minute = currentTime.getMinutes();
 
-            
+            $("#qlocktwo").removeClass("qactive");
+
             if (minute => 35）{
                 hour+=1;
                 $(".TO").addClass("qactive"); 
@@ -126,7 +127,9 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
                 $(".ELEVEN").addClass("qactive");
             } else {
                 $(".TWELVE").addClass("qactive");
-            } 
+            }
+            //
+            //end qlocktwo clock
         
         };
         //set the interval to run each second
