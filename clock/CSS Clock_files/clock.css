@@ -8,6 +8,23 @@ margin:0;
 padding:0;
 }
 
+#qlocktwo {
+	position:absolute;
+	margin-top:12px;
+	margin-left:90px;
+	font-size: 75px;
+	font-family: 'Open Sans';
+}
+
+#qclock td {
+	width:100px;
+	text-align: center;
+}
+
+#qclock tr {
+	height:100px;
+}
+
 ol,ul {
 list-style:none;
 }
@@ -51,6 +68,7 @@ width:1000px;
 height:1000px;
 position:relative;
 margin: auto;
+display: none;
 }
 
 #hoursW,#minutesW,#secondsW {
@@ -72,6 +90,16 @@ transform-origin:center center;
 position:absolute;
 left:500px;
 top:500px;
+}
+
+#weather {
+	position:absolute;
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top: -32px;
+	top: 520px;
+	left: 50%;
 }
 
 li {
