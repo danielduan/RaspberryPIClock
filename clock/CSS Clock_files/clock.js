@@ -67,22 +67,29 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
             hour = currentTime.getHours();
             minute = currentTime.getMinutes();
 
-            $(".qactive").removeClass("qactive");
-
             if (minute<35) {
                 $(".PAST").addClass("qactive");
-                if(minute >=5 && minute <10){
+                if(minute==0){
+                    $(".MFIVE").addClass("qactive");
+                    $("OCLOCK").addClass("qactive");
+                }
+                else if(minute >=5 && minute <10){
                     $(".MFIVE").addClass("qactive");
                 } else if(minute >=10 && minute <15){
+                    $(".MFIVE").removeClass("qactive");
                     $(".MTEN").addClass("qactive");
                 } else if(minute >=15 && minute <20){
+                    $(".MTEN").removeClass("qactive");
                     $(".QUARTER").addClass("qactive");
                 } else if(minute >=20 && minute <25){
+                    $(".QUARTER").removeClass("qactive");
                     $(".TWENTY").addClass("qactive");
                 } else if(minute >=25 && minute <30){
-                    $(".TWENTY").addClass("qactive");
+                    $(".TWENTY").removeClass("qactive");
                     $(".MFIVE").addClass("qactive");
                 } else if(minute >=30 && minute <35){
+                    $(".TWENTY").removeClass("qactive");
+                    $(".FIVE").removeClass("qactive");
                     $(".HALF").addClass("qactive");
                 }
             }
@@ -90,15 +97,20 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
                 hour+=1;
                 $(".TO").addClass("qactive"); 
                 if(minute >=35 && minute <40){
+                     $(".HALF").removeClass("qactive");
                      $(".TWENTY").addClass("qactive"); 
                      $(".MFIVE").addClass("qactive");
                 } else if(minute >=40 && minute <45){
+                    $(".MFIVE").removeClass("qactive");
                     $(".TWENTY").addClass("qactive");
                 } else if(minute >=45 && minute <50){
+                    $(".TWENTY").removeClass("qactive");
                     $(".QUARTER").addClass("qactive");
                 } else if(minute >=50 && minute <55){
+                    $(".QUARTER").removeClass("qactive");
                     $(".MTEN").addClass("qactive");
                 } else if(minute >=55 && minute <=59){
+                    $(".MTEN").removeClass("qactive");
                     $(".MFIVE").addClass("qactive");
                 }
             }
