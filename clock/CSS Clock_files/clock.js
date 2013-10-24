@@ -62,16 +62,34 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
 
             //start qlocktwo
             //
+            $(".IT").addClass("qactive");
+            $(".IS").addClass("qactive");
             hour = currentTime.getHours();
             minute = currentTime.getMinutes();
-
             
-            if (minute => 35）{
+            if (minute<35) {
+                $(".PAST").addClass("qactive");
+                if(minute >=5 && minute <10){
+                    $(".MFIVE").addClass("qactive");
+                } else if(minute >=10 && minute <15){
+                    $(".MTEN").addClass("qactive");
+                } else if(minute >=15 && minute <20){
+                    $(".QUARTER").addClass("qactive");
+                } else if(minute >=20 && minute <25){
+                    $(".TWENTY").addClass("qactive");
+                } else if(minute >=25 && minute <30){
+                    $(".TWENTY").addClass("qactive");
+                    $(".MFIVE").addClass("qactive");
+                } else if(minute >=30 && minute <35){
+                    $(".HALF").addClass("qactive");
+                }
+            }
+            else {
                 hour+=1;
                 $(".TO").addClass("qactive"); 
                 if(minute >=35 && minute <40){
                      $(".TWENTY").addClass("qactive"); 
-                     $(".FIVE").addClass("qactive");
+                     $(".MFIVE").addClass("qactive");
                 } else if(minute >=40 && minute <45){
                     $(".TWENTY").addClass("qactive");
                 } else if(minute >=45 && minute <50){
@@ -81,25 +99,7 @@ Copyright:	2010, Daniel T Ott, LLC., under the Creative Commons Attribution 3.0 
                 } else if(minute >=55 && minute <=59){
                     $(".MFIVE").addClass("qactive");
                 }
-            } else{
-                $(".PAST").addClass("qactive");
-                if(minute >=5 && minute <10){
-                    $(".FIVE").addClass("qactive");
-                } else if(minute >=10 && minute <15){
-                    $(".MTEN").addClass("qactive");
-                } else if(minute >=15 && minute <20){
-                    $(".QUARTER").addClass("qactive");
-                } else if(minute >=20 && minute <25){
-                    $(".TWENTY").addClass("qactive");
-                } else if(minute >=25 && minute <30){
-                    $(".TWENTY").addClass("qactive");
-                    $(".FIVE").addClass("qactive");
-                } else if(minute >=30 && minute <35){
-                    $(".HALF").addClass("qactive");
-                }
-                    
             }
-            
             
             
             if (hour == 1) {
