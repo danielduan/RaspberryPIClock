@@ -69,10 +69,11 @@
                 $(".PAST").addClass("qactive");
                 $(".TO").removeClass("qactive");
                 if(minute>=0 && minute<5){
-                    $(".MFIVE").addClass("qactive");
+                    $(".MFIVE").removeClass("qactive");
                     $("OCLOCK").addClass("qactive");
                 }
                 else if(minute >=5 && minute <10){
+                    $("OCLOCK").removeClass("qactive");
                     $(".MFIVE").addClass("qactive");
                 } else if(minute >=10 && minute <15){
                     $(".MFIVE").removeClass("qactive");
@@ -84,7 +85,6 @@
                     $(".QUARTER").removeClass("qactive");
                     $(".TWENTY").addClass("qactive");
                 } else if(minute >=25 && minute <30){
-                    $(".TWENTY").removeClass("qactive");
                     $(".MFIVE").addClass("qactive");
                 } else if(minute >=30 && minute <35){
                     $(".TWENTY").removeClass("qactive");
@@ -102,7 +102,6 @@
                      $(".MFIVE").addClass("qactive");
                 } else if(minute >=40 && minute <45){
                     $(".MFIVE").removeClass("qactive");
-                    $(".TWENTY").addClass("qactive");
                 } else if(minute >=45 && minute <50){
                     $(".TWENTY").removeClass("qactive");
                     $(".QUARTER").addClass("qactive");
