@@ -74,7 +74,7 @@
                     $(".OCLOCK").addClass("qactive");
                 }
                 else if(minute >=5 && minute <10){
-                    $("OCLOCK").removeClass("qactive");
+                    $(".OCLOCK").removeClass("qactive");
                     $(".MFIVE").addClass("qactive");
                 } else if(minute >=10 && minute <15){
                     $(".MFIVE").removeClass("qactive");
