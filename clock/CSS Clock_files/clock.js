@@ -70,7 +70,8 @@
                 $(".TO").removeClass("qactive");
                 if(minute>=0 && minute<5){
                     $(".MFIVE").removeClass("qactive");
-                    $("OCLOCK").addClass("qactive");
+                    $(".PAST").removeClass("qactive");
+                    $(".OCLOCK").addClass("qactive");
                 }
                 else if(minute >=5 && minute <10){
                     $("OCLOCK").removeClass("qactive");
