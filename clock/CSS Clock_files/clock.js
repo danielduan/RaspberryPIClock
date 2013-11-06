@@ -57,10 +57,11 @@
             //if (secondToggle) {
                 switch (minute % 5) {
                     case 0:
-                        $(".qdot4").removeClass("qactive");
-                        $(".qdot3").removeClass("qactive");
-                        $(".qdot2").removeClass("qactive");
                         $(".qdot1").removeClass("qactive");
+                        $(".qdot2").removeClass("qactive");
+                        $(".qdot3").removeClass("qactive");
+                        $(".qdot4").removeClass("qactive");
+                        break;
                     case 1:
                         $(".qdot1").addClass("qactive");;
                         break;
