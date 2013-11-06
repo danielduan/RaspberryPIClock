@@ -54,8 +54,13 @@
             var hour = currentTime.getHours();
             var minute = currentTime.getMinutes();
 
-            if (secondToggle) {
+            //if (secondToggle) {
                 switch (minute % 5) {
+                    case 0:
+                        $(".qdot4").removeClass("qactive");
+                        $(".qdot3").removeClass("qactive");
+                        $(".qdot2").removeClass("qactive");
+                        $(".qdot1").removeClass("qactive");
                     case 1:
                         $(".qdot1").addClass("qactive");;
                         break;
@@ -69,14 +74,14 @@
                         $(".qdot4").addClass("qactive");;
                         break;
                 }
-                secondToggle = false;
-            } else {
-                $(".qdot4").removeClass("qactive");
-                $(".qdot3").removeClass("qactive");
-                $(".qdot2").removeClass("qactive");
-                $(".qdot1").removeClass("qactive");
-                secondToggle = true;
-            }
+            //    secondToggle = false;
+            //} else {
+            //    $(".qdot4").removeClass("qactive");
+            //    $(".qdot3").removeClass("qactive");
+            //    $(".qdot2").removeClass("qactive");
+            //    $(".qdot1").removeClass("qactive");
+            //    secondToggle = true;
+            //}
 
             $(".IT").addClass("qactive");
             $(".IS").addClass("qactive");
