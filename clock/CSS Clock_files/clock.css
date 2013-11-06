@@ -11,14 +11,14 @@ body {
 table {
 	border-collapse:collapse;
 	border-spacing:0;
-	padding:0;
+	padding:0px;
 	border:none;
 }
 
 #qlocktwo {
 	position:absolute;
 	margin-top:0px;
-	margin-left:80px;
+	margin-left:90px;
 	font-size: 75px;
 	font-family: 'Open Sans';
 	color: #222222;
@@ -39,12 +39,12 @@ table {
 }
 
 #qclock td {
-	width:100px;
+	width:95px;
 	text-align: center;
 }
 
 #qclock tr {
-	height:95px;
+	height:90px;
 }
 
 .qactive {
