@@ -130,7 +130,6 @@
                 $(".TWELVE").addClass("qactive");
                 $(".ELEVEN").removeClass("qactive");
             }
-            //
         
         };
         //set the interval to run each second
