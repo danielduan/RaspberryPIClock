@@ -51,19 +51,35 @@
             //start qlocktwo
             //
 
+            var hour = currentTime.getHours();
+            var minute = currentTime.getMinutes();
+
             if (secondToggle) {
-                $("#qdot").addClass("qactive");
+                switch (minute % 5) {
+                    case 1:
+                        $(".qdot1").addClass("qactive");;
+                        break;
+                    case 2:
+                        $(".qdot2").addClass("qactive");;
+                        break;
+                    case 3:
+                        $(".qdot3").addClass("qactive");;
+                        break;
+                    case 4:
+                        $(".qdot4").addClass("qactive");;
+                        break;
+                }
                 secondToggle = false;
             } else {
-                $("#qdot").removeClass("qactive");
+                $(".qdot4").removeClass("qactive");
+                $(".qdot3").removeClass("qactive");
+                $(".qdot2").removeClass("qactive");
+                $(".qdot1").removeClass("qactive");
                 secondToggle = true;
             }
 
             $(".IT").addClass("qactive");
             $(".IS").addClass("qactive");
-
-            var hour = currentTime.getHours();
-            var minute = currentTime.getMinutes();
 
             if (minute<35) {
                 $(".PAST").addClass("qactive");
